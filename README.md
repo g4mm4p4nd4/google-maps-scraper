@@ -809,3 +809,68 @@ Please use this scraper responsibly and in accordance with applicable laws and r
 <p align="center">
   <sub>Banner generated using OpenAI's DALL-E</sub>
 </p>
+
+
+## Overview & Purpose
+
+Google Maps Scraper is an open‑source tool that extracts rich business data from Google Maps. It helps users collect business leads, emails, phone numbers, websites, ratings, coordinates and more. The project exists to simplify lead generation, local business research, sales prospecting and data enrichment by providing CLI, web UI and API modes.
+
+## Features & Tech Stack
+
+- Extract comprehensive business details from Google Maps (emails, phone numbers, websites, reviews, ratings and coordinates).
+- Supports multiple interfaces including command‑line tool, web UI, REST API and multi‑user SaaS edition.
+- Integrates with AI agents to automate scraping tasks.
+- Offers CSV and JSON output formats for easy integration with other tools.
+
+| Component | Technology |
+| --- | --- |
+| Language | Go |
+| CLI & Web Server | Built with Go modules and standard libraries |
+| Deployment | Docker containers with optional Kubernetes support |
+| Output Formats | CSV, JSON |
+
+## Installation & Usage
+
+To install the Google Maps Scraper locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/g4mm4p4nd4/google-maps-scraper.git
+cd google-maps-scraper
+
+# Build the Go binaries
+go build ./...
+
+# Run a simple scrape from the command line
+./google-maps-scraper --query "coffee shops in Boston" --limit 50 --output output.csv
+```
+
+To launch the web UI, build the project and run the server:
+
+```bash
+# Run the web UI locally
+go run main.go
+```
+
+For Docker users, you can build and run with Docker Compose:
+
+```bash
+docker-compose up --build
+```
+
+These commands are examples — see the project documentation for additional flags, environment variables and advanced usage.
+
+## Business & Entrepreneurial Value
+
+- Monetize lead generation by offering scraped business data as a subscription service or by licensing enriched datasets.
+- Build a SaaS platform around the scraper to provide hosted scraping services with user accounts and billing.
+- Integrate the scraper into CRM or sales‑automation tools to streamline prospecting workflows and upsell data‑enrichment features.
+- Leverage the scalable architecture to process large volumes of searches efficiently, unlocking new revenue channels.
+
+## Consumer Value
+
+- Saves users hours of manual data collection by automatically gathering business contact details and location information.
+- Provides a simple interface (CLI, web UI and API) that non‑technical and technical users can operate.
+- Empowers users with customizable searches and export formats, giving them control over the data they collect.
+- Enhances transparency by exporting data in well‑structured CSV/JSON formats that can be audited or combined with other datasets.
+- Real‑world outcomes include faster market research, improved lead targeting and reduced operational costs.
